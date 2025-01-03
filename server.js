@@ -14,12 +14,7 @@ app.use(cors());
 
 // Firebase Configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDh7jH5ZLJZQWPXh9bBoykGGNiXoBKKqTs",
-  authDomain: "lofa-ab375.firebaseapp.com",
-  projectId: "lofa-ab375",
-  storageBucket: "lofa-ab375.firebasestorage.app",
-  messagingSenderId: "149659091368",
-  appId: "1:149659091368:web:91cf5492ff81d3bdc59d9d"
+  
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
@@ -28,10 +23,7 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 // MySQL Database Connection
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '2024',
-  database: 'lost_and_found'
+ 
 });
 db.connect(err => {
   if (err) throw err;
